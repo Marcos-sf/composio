@@ -795,5 +795,7 @@ new Chart(document.getElementById('breadthChart'), {{
 
 with open("dashboard/index.html", "w") as f:
     f.write(html_content)
+with open("index.html", "w") as f:
+    f.write(html_content)
 
-print(f"Upgraded Dashboard compiled: dashboard/index.html ({len(html_content)} bytes)")
+print(f"Upgraded Dashboard compiled: dashboard/index.html & index.html ({len(html_content)} bytes)")
