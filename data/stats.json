@@ -1,0 +1,173 @@
+{
+  "total": 100,
+  "categories": {
+    "CRM and Sales": {
+      "count": 10,
+      "buildable": 9,
+      "self_serve": 5
+    },
+    "Support and Helpdesk": {
+      "count": 10,
+      "buildable": 8,
+      "self_serve": 2
+    },
+    "Communications and Messaging": {
+      "count": 10,
+      "buildable": 10,
+      "self_serve": 9
+    },
+    "Marketing, Ads, Email and Social": {
+      "count": 10,
+      "buildable": 10,
+      "self_serve": 9
+    },
+    "Ecommerce": {
+      "count": 10,
+      "buildable": 7,
+      "self_serve": 5
+    },
+    "Data, SEO and Scraping": {
+      "count": 10,
+      "buildable": 8,
+      "self_serve": 7
+    },
+    "Developer, Infra and Data platforms": {
+      "count": 10,
+      "buildable": 10,
+      "self_serve": 8
+    },
+    "Productivity and Project Management": {
+      "count": 10,
+      "buildable": 10,
+      "self_serve": 7
+    },
+    "Finance and Fintech": {
+      "count": 10,
+      "buildable": 7,
+      "self_serve": 7
+    },
+    "AI, Research and Media-native": {
+      "count": 10,
+      "buildable": 7,
+      "self_serve": 4
+    }
+  },
+  "auth_distribution": {
+    "OAuth2": 57,
+    "Private App Token": 1,
+    "API Key": 49,
+    "API Token": 11,
+    "Basic Auth": 7,
+    "Access Token": 2,
+    "Bot Token": 3,
+    "Tenant Access Token": 1,
+    "JWT": 1,
+    "Admin API Token": 1,
+    "OAuth1.0a": 1,
+    "Bearer Token": 6,
+    "Personal Access Token": 4,
+    "GitHub App": 1,
+    "Key Pair": 1,
+    "Application Key": 1
+  },
+  "self_serve_breakdown": {
+    "yes": 26,
+    "trial": 22,
+    "freemium": 37,
+    "no": 15
+  },
+  "buildability": {
+    "yes": 86,
+    "partial": 5,
+    "needs outreach": 4,
+    "no": 5
+  },
+  "api_types": {
+    "REST, SOAP": 1,
+    "REST": 81,
+    "REST, GraphQL": 5,
+    "GraphQL": 3,
+    "None": 8,
+    "REST, Cypher": 1,
+    "REST, SQL": 1
+  },
+  "api_breadth": {
+    "narrow": 10,
+    "moderate": 22,
+    "broad": 43,
+    "very broad": 25
+  },
+  "confidence": {
+    "high": 82,
+    "medium": 18,
+    "low": 0
+  },
+  "has_mcp": 21,
+  "on_composio": 59,
+  "easy_wins": [
+    "HubSpot",
+    "Attio",
+    "Twenty",
+    "Podio",
+    "Zoho CRM",
+    "Freshdesk",
+    "Plain",
+    "Slack",
+    "Twilio",
+    "Zoho Cliq",
+    "Lark (Larksuite)",
+    "Discord",
+    "Telegram",
+    "WhatsApp Business",
+    "Vonage",
+    "Google Ads",
+    "Meta Ads",
+    "LinkedIn Ads",
+    "Mailchimp",
+    "Klaviyo",
+    "Pinterest",
+    "SendGrid",
+    "Shopify",
+    "WooCommerce",
+    "Magento (Adobe Commerce)",
+    "DataForSEO",
+    "Apify",
+    "GitHub",
+    "Cloudflare",
+    "Supabase",
+    "Neo4j",
+    "MongoDB Atlas",
+    "Sentry",
+    "Notion",
+    "Airtable",
+    "Linear",
+    "Jira",
+    "Asana",
+    "ClickUp",
+    "Stripe",
+    "Plaid",
+    "Binance",
+    "QuickBooks",
+    "Xero",
+    "Brex",
+    "Ramp",
+    "NotebookLM"
+  ],
+  "outreach_needed": [
+    "DealCloud",
+    "Pylon",
+    "Gladly",
+    "Salesforce Commerce Cloud",
+    "Amazon Selling Partner",
+    "fanbasis",
+    "Ahrefs",
+    "Waterfall.io",
+    "Paygent Connect",
+    "iPayX",
+    "PitchBook",
+    "Otter AI",
+    "Consensus",
+    "Devin",
+    "higgsfield"
+  ]
+}

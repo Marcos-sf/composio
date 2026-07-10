@@ -1,0 +1,15 @@
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# System/IDE files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
