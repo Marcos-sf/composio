@@ -83,8 +83,12 @@ To compile the interactive dashboard:
 # Compile dashboard HTML
 python3 build_dashboard.py
 
-# Open in browser (Linux)
+# Option A: Open file directly in browser
 xdg-open dashboard/index.html
+
+# Option B: Host via local web server
+python3 -m http.server 8000
+# Navigate to: http://localhost:8000/dashboard/
 ```
 
 ## 📂 Categories Covered
