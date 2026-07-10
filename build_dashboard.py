@@ -716,7 +716,7 @@ function runAgentSimulation() {{
     {{ text: `> Extracting key details from scraped document snippets...`, color: '#f1f1f7' }},
     {{ text: `> Running structured LLM validation schema...`, color: '#f59e0b' }},
     {{ text: `> Successfully validated schema! Compiling JSON result:`, color: '#10b981' }},
-    {{ text: JSON.dumps(appData, indent=2), color: '#a8ffb2', isJson: true }}
+    {{ text: JSON.stringify(appData, null, 2), color: '#a8ffb2', isJson: true }}
   ];
   
   let currentStep = 0;
