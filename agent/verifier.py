@@ -136,6 +136,8 @@ if __name__ == "__main__":
     
     with open("data/verification_report.json", "w") as f:
         json.dump(report, f, indent=2)
+    with open("verification/verification_report.json", "w") as f:
+        json.dump(report, f, indent=2)
     
     print("\n=== COMPOSIO DATASET VERIFIER REPORT ===\n")
     print(f"Total Apps Evaluated: {report['total_apps']}")
@@ -150,4 +152,4 @@ if __name__ == "__main__":
     print("\nMethodology:")
     for step in report['methodology']:
         print(f"  * {step}")
-    print("\nVerifier complete. Saved report to data/verification_report.json")
+    print("\nVerifier complete. Saved report to data/verification_report.json & verification/verification_report.json")
