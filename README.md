@@ -1,5 +1,22 @@
 # Composio App Research Dashboard
 
+### . Build & View Dashboard .
+
+To compile the interactive dashboard:
+
+```bash
+# Compile dashboard HTML
+python3 build_dashboard.py
+
+# Option A: Open file directly in browser
+xdg-open dashboard/index.html
+
+# Option B: Host via local web server
+python3 -m http.server 8000
+# Navigate to: http://localhost:8000/dashboard/
+
+
+
 > AI-powered analysis of **100 SaaS applications** across **10 categories** — evaluating auth methods, API surface, self-serve access, and agent buildability for Composio integration.
 
 ## 🔗 Live Dashboard
@@ -26,19 +43,21 @@
 ## 🏗️ Project Structure
 
 ```
+
 ├── agent/
-│   ├── config.py       # 100-app list, categories, JSON schema
-│   ├── main.py         # Core research agent + analysis engine
-│   └── verifier.py     # Verification pipeline (with human-in-the-loop audit logs)
+│ ├── config.py # 100-app list, categories, JSON schema
+│ ├── main.py # Core research agent + analysis engine
+│ └── verifier.py # Verification pipeline (with human-in-the-loop audit logs)
 ├── data/
-│   ├── apps.json       # Full 100-app dataset
-│   ├── stats.json      # Aggregate statistics
-│   └── verification_report.json
+│ ├── apps.json # Full 100-app dataset
+│ ├── stats.json # Aggregate statistics
+│ └── verification_report.json
 ├── dashboard/
-│   └── index.html      # Self-contained HTML dashboard (single file)
-├── build_dashboard.py  # Generates dashboard from dataset
+│ └── index.html # Self-contained HTML dashboard (single file)
+├── build_dashboard.py # Generates dashboard from dataset
 └── README.md
-```
+
+````
 
 ## 🤖 How the Agent Works
 
@@ -59,10 +78,12 @@ python3 agent/research_agent.py --app "Slack" --category "Communications and Mes
 
 # Run a batch of apps from the registry (loads from config.py / apps.json)
 python3 agent/research_agent.py --limit 5
-```
+````
 
 ### 2. Analysis & Verification
+
 To compute aggregate statistics and verify the dataset:
+
 ```bash
 # Run analysis & generate stats.json
 python3 agent/main.py
@@ -72,24 +93,12 @@ python3 agent/verifier.py
 ```
 
 ### 3. Generate Integration Proofs
+
 To generate runnable Python integration code snippets using the Composio SDK:
+
 ```bash
 python3 agent/proof_app.py
-```
 
-### 4. Build & View Dashboard
-To compile the interactive dashboard:
-```bash
-# Compile dashboard HTML
-python3 build_dashboard.py
-
-# Option A: Open file directly in browser
-xdg-open dashboard/index.html
-
-# Option B: Host via local web server
-python3 -m http.server 8000
-# Navigate to: http://localhost:8000/dashboard/
-```
 
 ## 📂 Categories Covered
 | Category | Apps | Buildable | Self-Serve |
@@ -116,3 +125,4 @@ python3 -m http.server 8000
 ---
 
 Built for the **Composio AI Product Ops Intern** take-home assignment.
+```
