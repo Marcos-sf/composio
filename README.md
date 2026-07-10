@@ -51,18 +51,40 @@
 
 ## 🚀 Running Locally
 
+### 1. Researching Applications
+To run the automated research agent for a specific SaaS application:
 ```bash
-# Generate the dashboard from data
-python3 build_dashboard.py
+# Research a single custom app
+python3 agent/research_agent.py --app "Slack" --category "Communications and Messaging"
 
-# Open in browser
-open dashboard/index.html
+# Run a batch of apps from the registry (loads from config.py / apps.json)
+python3 agent/research_agent.py --limit 5
+```
 
-# Run analysis
+### 2. Analysis & Verification
+To compute aggregate statistics and verify the dataset:
+```bash
+# Run analysis & generate stats.json
 python3 agent/main.py
 
-# Run verification
+# Run verification & generate verification_report.json
 python3 agent/verifier.py
+```
+
+### 3. Generate Integration Proofs
+To generate runnable Python integration code snippets using the Composio SDK:
+```bash
+python3 agent/proof_app.py
+```
+
+### 4. Build & View Dashboard
+To compile the interactive dashboard:
+```bash
+# Compile dashboard HTML
+python3 build_dashboard.py
+
+# Open in browser (Linux)
+xdg-open dashboard/index.html
 ```
 
 ## 📂 Categories Covered
